@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<input type="text" id="name" placeholder="Enter name"> 
+<button onclick="checkName()">Submit</button> 
+ 
+<p id="error"></p> 
+ 
+<script> 
+  function checkName() { 
+    let name = document.getElementById("name").value; 
+ 
+    if (name === "") { 
+      document.getElementById("error").innerHTML = "Name is required"; 
+    } else { 
+      document.getElementById("error").innerHTML = "Form submitted successfully"; 
+    } 
+  } 
+</script>
+</body>
+</html>
